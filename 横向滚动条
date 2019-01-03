@@ -1,0 +1,28 @@
+CSS:
+
+<style>
+    .divborder{
+        width: 400px;
+        height:80px;
+        /*border: 1px solid red;*/
+        overflow-x: auto;
+        overflow-y: hidden;
+        white-space: nowrap;
+    }
+    .divborder > div{
+        display: inline-block;
+    }
+</style>
+
+HTML：
+
+<div class="divborder">
+      <div  style="width: 100px;height: 100%;background-color: yellow"></div>
+      <div  style="width: 100px;height: 100%;background-color: gray"></div>
+      <div  style="width: 100px;height: 100%;background-color: green"></div>
+      <div  style="width: 100px;height: 100%;background-color: blue"></div>
+      <div  style="width: 100px;height: 100%;background-color: yellow"></div>
+      <div  style="width: 100px;height: 100%;background-color: gray"></div>
+      <div  style="width: 100px;height: 100%;background-color: green"></div>
+      <div  style="width: 100px;height: 100%;background-color: blue"></div>
+  </div>
