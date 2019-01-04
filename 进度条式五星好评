@@ -1,9 +1,9 @@
 CSS:
 
 <style>
-    span{
-        /*如果还有其他span标签时，可以改成类的形式*/
+    #father span{
         width: 20px;
+        /*margin:视情况调整五角星之间的外边距*/
         margin: -2px;
         display: inline-block;
     }
