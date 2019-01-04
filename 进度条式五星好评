@@ -1,0 +1,49 @@
+CSS:
+
+<style>
+    span{
+        /*如果还有其他span标签时，可以改成类的形式*/
+        width: 20px;
+        margin: -2px;
+        display: inline-block;
+    }
+    .outDiv{
+        width: 100px;
+        margin: 0px;
+        padding:0px;
+        color: #999999;
+        position: relative;
+    }
+    .inDiv{
+        /*Width:调整显示颜色长度*/
+        width: 50%;
+        margin: 0px;
+        padding: 0px;
+        color: gold;
+        overflow: hidden;
+        white-space: nowrap;
+        position: absolute;
+        z-index: 1;
+    }
+</style>
+
+JS：
+
+<script>
+    $(function () {
+        var htmlStr ="";
+        for (var i = 0; i < 5; i++) {
+            htmlStr += '<span class="glyphicon glyphicon-star"></span>';
+            $("#son1").html(htmlStr);
+            $("#son0").html(htmlStr);
+        }
+    });
+</script>
+
+HTML:
+
+<div id="father" class="outDiv">
+    <div id="son1" class="inDiv"></div>
+    <!--将内容写到这里，而不是id=son1的div上面-->
+    <div id="son0"></div>
+</div>
