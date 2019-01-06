@@ -1,0 +1,40 @@
+CSS:
+
+<style>
+    .tag{
+        height: 200px;
+        width: 150px;
+        padding: 0px;
+        position: relative;
+        overflow: hidden
+    }
+    .tagDiv{
+        font-size: 12px;
+        width: 50%;
+        text-align:center;
+        background-color: blue;
+        color:white;
+        -webkit-transform: rotate(-45deg);
+        position: absolute;
+        left: -16px;
+        top: 13px;
+    }
+    .tagImg{
+        height: 100%;
+        width: 100%
+    }
+</style>
+
+jQuery:
+
+$(function () {
+    $(".tagDiv").html(123);
+    $(".tagImg").prop("src","./img/1.jpg");
+});
+
+HTML:
+
+<div class="tag">
+    <div class="tagDiv">限免</div>
+    <img class="tagImg" src="./img/0.jpg"/>
+</div>
